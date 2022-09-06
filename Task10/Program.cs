@@ -7,13 +7,9 @@
 Console.Clear();
 Console.Write("Введите трёхзначное целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-if (number < 100)
+if (number < 100 || number > 999)
 {
-    Console.WriteLine("Число не трёхзначное");
-}
-else if (number > 999)
-{
-    Console.WriteLine("Число не трёхзначное");
+    Console.WriteLine($"{number} -> Число не трёхзначное");
 }
 else if (number >= 100 && number <= 999)
 {
@@ -24,7 +20,7 @@ else if (number >= 100 && number <= 999)
         return (firstandthirdDigit - secondDigit) / 10;
     }
     int result = MaxDigit(number);
-    System.Console.WriteLine(result);
+    Console.WriteLine(result);
 }
 
 
