@@ -10,12 +10,12 @@ int number = Convert.ToInt32(Console.ReadLine()); ;
 int num = number;
 if (number <= 99)
 {
-    Console.WriteLine("Третьей цифры нет");
+    Console.WriteLine($"{number} -> третьей цифры нет");
 }
 else if (number >= 100 && number < 1000)
 {
     num = number % 10;
-    Console.WriteLine($"{num}");
+    Console.WriteLine($"{number} -> {num}");
 }
 else
 {
@@ -24,5 +24,5 @@ else
         num = num / 10;
     }
     num = num % 10;
-    Console.WriteLine($"{num}");
+    Console.WriteLine($"{number} -> {num}");
 }
