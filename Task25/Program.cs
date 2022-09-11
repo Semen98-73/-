@@ -17,4 +17,3 @@ for (int i = 1; i < num2; i++)
 Console.WriteLine($"A в степени B равно: {digit}");
 
 
-
