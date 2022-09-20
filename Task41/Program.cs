@@ -42,5 +42,3 @@ void PrintArray(int[] array)
         else Console.Write($"{array[i]}, ");
     }
 }
-
-
