@@ -2,15 +2,15 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
+Console.Clear();
 Console.WriteLine("Введите размер массива");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] arr = new int[size];
 Console.WriteLine("Введите числа");
 FillArray(arr);
 PrintArray(arr);
-NumbersArray(arr);
 
-void NumbersArray(int[] array)
+int Numbers(int[] array)
 {
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
@@ -18,8 +18,10 @@ void NumbersArray(int[] array)
         if (array[i] > 0)
             count++;
     }
-    Console.Write($"-> {count}");
+    return count;
 }
+int results = Numbers(arr);
+Console.Write($"-> {results}");
 
 void FillArray(int[] array)
 {
